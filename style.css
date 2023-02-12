@@ -70,7 +70,8 @@ main {
   inset: 0;
   width: 100%;
   background-color: var(--c-accent);
-  opacity: 0.8;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
 }
 
 .card-banner > img {

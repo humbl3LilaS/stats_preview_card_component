@@ -21,9 +21,10 @@
   <div class="card-container">
     <div class="image-container">
       <picture class="card-banner">
-        <source
-            srcset="./images/image-header-mobile.jpg, ./images/image-header-desktop.jpg"
-            media="(max-width: 700px) 375px, (min-width: 700px)">
+        <source media="(max-width: 700px)"
+                srcset="images/image-header-mobile.jpg">
+        <source media="(min-width: 701px)"
+                srcset="images/image-header-desktop.jpg">
         <img src="./images/image-header-desktop.jpg"
              alt="Images of Business team working together">
       </picture>
@@ -31,8 +32,8 @@
 
     <div class="business-info">
       <h1 class="heading-primary">Get <span
-        class="text-cta">insights</span> that help
-      your business grow.</h1>
+          class="text-cta">insights</span> that help
+        your business grow.</h1>
 
       <p class="business-detail">Discover the benefits of data analytics and
         make

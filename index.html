@@ -2,29 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-<!--  link style sheet-->
+  <link rel="icon" type="image/png" sizes="32x32"
+        href="./images/favicon-32x32.png">
+
+  <!--  link style sheet-->
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | Stats preview card component</title>
 
-  
-  
+
 </head>
 <body>
 
-  Get insights that help your business grow.
+<main>
+  <div class="card-container">
+    <div class="image-container">
+      <picture class="card-banner">
+        <source
+            srcset="./images/image-header-mobile.jpg, ./images/image-header-desktop.jpg"
+            media="(max-width: 700px) 375px, (min-width: 700px)">
+        <img src="./images/image-header-desktop.jpg"
+             alt="Images of Business team working together">
+      </picture>
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <div class="business-info">
+      <h1 class="heading-primary">Get <span
+        class="text-cta">insights</span> that help
+      your business grow.</h1>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <p class="business-detail">Discover the benefits of data analytics and
+        make
+        better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
 
-  
+      <ul class="achievements">
+        <li class="achievement-detail">
+          <span class="achievement-count">10k+</span> companies
+        </li>
+        <li class="achievement-detail">
+          <span class="achievement-count">314</span> templates
+        </li>
+        <li class="achievement-detail">
+          <span class="achievement-count">12m+</span> queries
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</main>
+
 </body>
 </html>
